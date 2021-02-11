@@ -1,0 +1,7 @@
+2021-02-11 15:07:36 INFO  AbstractIntegrationTest:35 - URL jdbc:postgresql://localhost:49225/first?loggerLevel=OFF
+а2021-02-11 15:07:40 INFO  FirstControllerTest:36 - USER User(name={"name": "robin"}, age=0)
+а2021-02-11 15:10:28 INFO  AbstractIntegrationTest:35 - URL jdbc:postgresql://localhost:49227/first?loggerLevel=OFF
+Ð°2021-02-11 15:10:31 INFO  FirstControllerTest:36 - USER User(name={"name": "robin"}, age=0)
+Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=1, name=firstname, age=22)
+Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=2, name=second, age=23)
+Ð°
