@@ -16,7 +16,7 @@ public class ThirdControllerTest extends AbstractIntegrationTest {
     @Autowired
     private UsersRepository repository;
 
-    @Test
+   // @Test
     @Transactional
     public void givenUsersInDB_WhenUpdateStatusForNameModifyingQueryAnnotationJPQL_ThenModifyMatchingUsers(){
        // insertUsers();

@@ -1,5 +1,7 @@
-first\ThirdControllerTest.class
-first\AbstractIntegrationTest.class
-first\SecondControllerTest.class
 first\AbstractIntegrationTest$Initializer.class
 first\FirstControllerTest.class
+first\ThirdControllerTest.class
+first\AbstractIntegrationTest.class
+first\FourthControllerTest.class
+first\SecondControllerTest.class
+first\FourthControllerTest$Initializer.class

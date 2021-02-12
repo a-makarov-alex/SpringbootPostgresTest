@@ -29,5 +29,11 @@ services:
     depends_on:
       - postgres
 
+  mockServer:
+    image: mockserver/mockserver:mockserver-5.11.1
+    #command: -logLevel DEBUG -serverPort 1090 -proxyRemotePort 80 -proxyRemoteHost www.mock-server.com
+    ports:
+      - 1080:1090
+
 volumes:
   db-data:

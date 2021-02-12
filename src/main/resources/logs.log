@@ -4,4 +4,6 @@
 Ð°2021-02-11 15:10:31 INFO  FirstControllerTest:36 - USER User(name={"name": "robin"}, age=0)
 Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=1, name=firstname, age=22)
 Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=2, name=second, age=23)
+Ð°2021-02-12 22:14:22 INFO  FifthTest:54 - SOME LOGS 49163
+Ð°2021-02-12 22:14:22 INFO  FifthTest:55 - SOME LOGS 2 /sharp_merkle
 Ð°

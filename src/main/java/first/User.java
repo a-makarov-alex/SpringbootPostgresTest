@@ -17,4 +17,13 @@ public class User {
 
     @Column
     private int age;
+
+    public User(Long id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    public User() {
+    }
 }

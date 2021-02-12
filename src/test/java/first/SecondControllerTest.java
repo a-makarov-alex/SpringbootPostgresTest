@@ -36,7 +36,7 @@ public class SecondControllerTest {
     private MockMvc mockMvc;
 
    //Дергаем эндпойнт, который создает объект в базе
-    @Test
+   // @Test
     public void fourthTest() throws Exception {
         Assert.assertNotNull(firstController);
         User user = new User();
