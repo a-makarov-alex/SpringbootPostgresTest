@@ -1,26 +1,66 @@
-2021-02-11 15:07:36 INFO  AbstractIntegrationTest:35 - URL jdbc:postgresql://localhost:49225/first?loggerLevel=OFF
-а2021-02-11 15:07:40 INFO  FirstControllerTest:36 - USER User(name={"name": "robin"}, age=0)
-а2021-02-11 15:10:28 INFO  AbstractIntegrationTest:35 - URL jdbc:postgresql://localhost:49227/first?loggerLevel=OFF
-Ð°2021-02-11 15:10:31 INFO  FirstControllerTest:36 - USER User(name={"name": "robin"}, age=0)
-Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=1, name=firstname, age=22)
-Ð°2021-02-11 15:58:30 INFO  App:40 - FIND ALL User(id=2, name=second, age=23)
-Ð°2021-02-12 22:14:22 INFO  FifthTest:54 - SOME LOGS 49163
-Ð°2021-02-12 22:14:22 INFO  FifthTest:55 - SOME LOGS 2 /sharp_merkle
-Ð°2021-02-15 12:02:03 ERROR FirstController:39 - IOException java.net.ConnectException: Connection refused: connect
-Ð°2021-02-15 12:09:15 INFO  SixTest:42 - RESTASSURED URL: http://localhost:8083/users/new
-Ð°2021-02-15 12:09:16 INFO  FirstController:37 - RESPONSE CODE 404
-Ð°2021-02-15 12:09:17 INFO  SixTest:45 - REQUEST REST ASSURED: 200
-Ð°2021-02-15 12:23:25 INFO  SixTest:42 - RESTASSURED URL: http://localhost:8083/users/new
-Ð°2021-02-15 12:23:27 INFO  FirstController:37 - CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT AND GET RESPONSE CODE: 200
-Ð°2021-02-15 12:23:27 INFO  FirstController:38 - BODY: OK
-Ð°2021-02-15 12:23:27 INFO  SixTest:45 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 200
-Ð°2021-02-15 12:23:27 INFO  SixTest:46 - BODY: [{"id":1,"name":"firstname","age":22},{"id":2,"name":"second","age":23},{"id":3,"name":"second","age":23},{"id":4,"name":"third","age":3},{"id":5,"name":"third","age":3}]
-Ð°2021-02-15 12:38:54 INFO  SixTest:42 - RESTASSURED NOW WILL SEND REQUEST TO CONTROLLER ENDPOINT
-Ð°2021-02-15 12:38:54 INFO  SixTest:43 - CONTROLLER URL: http://localhost:8083/users/new
-Ð°2021-02-15 12:57:00 INFO  SixTest:42 - RESTASSURED NOW WILL SEND REQUEST TO CONTROLLER ENDPOINT
-Ð°2021-02-15 12:57:00 INFO  SixTest:43 - CONTROLLER URL: http://localhost:8083/users/new
-Ð°2021-02-15 12:57:02 INFO  FirstController:49 - CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT AND GET RESPONSE CODE: 200
-Ð°2021-02-15 12:57:02 INFO  FirstController:50 - RESULT: {"token":"1234567890"}
-Ð°2021-02-15 12:57:02 INFO  SixTest:46 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 200
-Ð°2021-02-15 12:57:02 INFO  SixTest:47 - BODY: [{"id":1,"name":"firstname","age":22},{"id":2,"name":"second","age":23},{"id":3,"name":"second","age":23},{"id":4,"name":"third","age":3},{"id":5,"name":"third","age":3}]
+2021-02-15 18:03:55 INFO  SixTest:65 - [
+  {
+  "id": 1,
+  "name": "firstname",
+  "age": 22
+},
+  {
+    "id": 2,
+    "name": "second",
+    "age": 23
+  },
+  {
+    "id": 3,
+    "name": "second",
+    "age": 23
+  },
+  {
+    "id": 4,
+    "name": "third",
+    "age": 3
+  },
+  {
+    "id": 5,
+    "name": "third",
+    "age": 3
+  }
+]
+Ð°2021-02-15 18:03:55 INFO  SixTest:73 - TEST REQUEST TO CONTROLLER BY URL: http://localhost:8083/users/expect/one
+Ð°2021-02-15 18:03:56 INFO  FirstController:76 - CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT: http://localhost:1080/test/one
+Ð°2021-02-15 18:03:56 INFO  FirstController:77 - GET RESPONSE CODE: 404
+Ð°2021-02-15 18:03:56 INFO  FirstController:78 - RESULT: 
+Ð°2021-02-15 18:03:57 INFO  SixTest:76 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 200
+Ð°2021-02-15 18:03:57 INFO  SixTest:77 - BODY: 
+Ð°2021-02-15 18:07:11 INFO  SixTest:73 - TEST REQUEST TO CONTROLLER BY URL: http://localhost:8083/users/expect/one
+Ð°2021-02-15 18:07:12 INFO  FirstController:76 - CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT: http://localhost:1080/test/one
+Ð°2021-02-15 18:07:12 INFO  FirstController:77 - GET RESPONSE CODE: 200
+Ð°2021-02-15 18:07:12 INFO  FirstController:78 - RESULT: [
+  {
+  "id": 1,
+  "name": "firstname",
+  "age": 22
+},
+  {
+    "id": 2,
+    "name": "second",
+    "age": 23
+  },
+  {
+    "id": 3,
+    "name": "second",
+    "age": 23
+  },
+  {
+    "id": 4,
+    "name": "third",
+    "age": 3
+  },
+  {
+    "id": 5,
+    "name": "third",
+    "age": 3
+  }
+]
+Ð°2021-02-15 18:07:12 INFO  SixTest:76 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 200
+Ð°2021-02-15 18:07:12 INFO  SixTest:77 - BODY: 
 Ð°

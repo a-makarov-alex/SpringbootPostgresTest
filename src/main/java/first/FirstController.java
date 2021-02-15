@@ -63,6 +63,43 @@ public class FirstController {
         return users;
     }
 
+    @GetMapping("/users/expect/one")
+    public void methodForJSONExpectationOne() {
+        try {
+            String urlString = "http://localhost:1080/test/one";
+            HttpGet request = new HttpGet(urlString);
+            CloseableHttpClient client = HttpClients.createDefault();
+            CloseableHttpResponse response = client.execute(request);
+
+            HttpEntity entity = response.getEntity();
+            String result = EntityUtils.toString(entity);
+            userLogger.info("CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT: " + urlString);
+            userLogger.info("GET RESPONSE CODE: " + response.getStatusLine().getStatusCode());
+            userLogger.info("RESULT: " + result);
+
+        } catch(IOException e) {
+            userLogger.error("IOException " + e);
+        }
+    }
+
+    @GetMapping("/users/expect/two")
+    public void methodForJSONExpectationTwo() {
+        try {
+            String urlString = "http://localhost:1080/test/two";
+            HttpGet request = new HttpGet(urlString);
+            CloseableHttpClient client = HttpClients.createDefault();
+            CloseableHttpResponse response = client.execute(request);
+
+            HttpEntity entity = response.getEntity();
+            String result = EntityUtils.toString(entity);
+            userLogger.info("CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT AND GET RESPONSE CODE: " + response.getStatusLine().getStatusCode());
+            userLogger.info("RESULT: " + result);
+
+        } catch(IOException e) {
+            userLogger.error("IOException " + e);
+        }
+    }
+
     @PostMapping("/users")
     public String createUser(
             @RequestParam(value="name") String name,
