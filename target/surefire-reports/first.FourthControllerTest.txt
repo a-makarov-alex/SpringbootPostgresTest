@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: first.FourthControllerTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.9 s <<< FAILURE! - in first.FourthControllerTest
-save_and_read_user  Time elapsed: 0 s  <<< ERROR!
-java.lang.NullPointerException
-	at first.FourthControllerTest.save_and_read_user(FourthControllerTest.java:51)
-

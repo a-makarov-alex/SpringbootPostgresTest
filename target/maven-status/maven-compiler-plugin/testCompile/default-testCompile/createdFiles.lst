@@ -3,5 +3,7 @@ first\FirstControllerTest.class
 first\ThirdControllerTest.class
 first\AbstractIntegrationTest.class
 first\FourthControllerTest.class
+first\SixTest.class
 first\SecondControllerTest.class
 first\FourthControllerTest$Initializer.class
+first\FifthTest.class

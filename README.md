@@ -15,6 +15,8 @@ https://sysout.ru/spring-boot-postgresql-js-v-dosker/
 2. docker-compose up
 3. запущены 2 контейнера, 1 с постгрес, 1 с приложением
 
+БАЗУ МЕНЯТЬ В src/main/resources/application.properties
+
 Далее надо создать БД (автоматически пока не удается). Нужное имя задано в application.properties.
 Название таблицы см в контроллерах.
 Как заполнить базу:
@@ -31,3 +33,6 @@ CREATE DATABASE seconddb;
 
 На будущее:
 To run the integrations tests after your unit tests, simply add maven-failsafe-plugin to your project. In addition, make sure your integration tests have IT as a postfix:
+
+СРАВНЕНИЕ mockserver, wiremock и др
+https://dernasherbrezon.com/posts/mock-server/
