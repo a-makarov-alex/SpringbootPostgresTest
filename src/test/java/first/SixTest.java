@@ -45,6 +45,9 @@ public class SixTest {
         userLogger.info("BODY: " + response.getBody().asString());
     }
 
+    /**
+     * Тест с использованием json файла в качестве expectation body для mockserver
+     */
     @Test
     public void testWithJSONExpectation() {
         /*String jsonPath = "src/test/resources/json/testexpectations";
@@ -53,8 +56,7 @@ public class SixTest {
 
         //ConfigurationProperties.initializationJsonPath(jsonPath);
         String URL = "http://localhost:8083";
-        String pathOne = "/users/expect/one";
-        String pathTwo = "/users/expect/two";
+        String pathOne = "/users/expect";
 
         /**
          * Указываем заглушку для GET эндпойнта
@@ -71,7 +73,7 @@ public class SixTest {
 
         RequestSpecification request = RestAssured.given();
         userLogger.info("TEST REQUEST TO CONTROLLER BY URL: " + URL + pathOne);
-        request.baseUri(URL).basePath(pathOne);
+        request.baseUri(URL).basePath(pathOne).queryParam("expectValue", "one");
         Response response = request.when().get();
         userLogger.info("REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: " + response.getStatusCode());
         userLogger.info("BODY: " + response.getBody().asString());

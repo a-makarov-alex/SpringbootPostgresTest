@@ -1,34 +1,4 @@
-2021-02-15 18:03:55 INFO  SixTest:65 - [
-  {
-  "id": 1,
-  "name": "firstname",
-  "age": 22
-},
-  {
-    "id": 2,
-    "name": "second",
-    "age": 23
-  },
-  {
-    "id": 3,
-    "name": "second",
-    "age": 23
-  },
-  {
-    "id": 4,
-    "name": "third",
-    "age": 3
-  },
-  {
-    "id": 5,
-    "name": "third",
-    "age": 3
-  }
-]
-Ð°2021-02-15 18:03:55 INFO  SixTest:73 - TEST REQUEST TO CONTROLLER BY URL: http://localhost:8083/users/expect/one
-Ð°2021-02-15 18:03:56 INFO  FirstController:76 - CONTROLLER SEND REQUEST TO MOCKSERVER ENDPOINT: http://localhost:1080/test/one
-Ð°2021-02-15 18:03:56 INFO  FirstController:77 - GET RESPONSE CODE: 404
-Ð°2021-02-15 18:03:56 INFO  FirstController:78 - RESULT: 
-Ð°2021-02-15 18:03:57 INFO  SixTest:76 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 200
-Ð°2021-02-15 18:03:57 INFO  SixTest:77 - BODY: 
+2021-02-16 11:17:10 INFO  SixTest:72 - TEST REQUEST TO CONTROLLER BY URL: http://localhost:8083/users/expect
+Ð°2021-02-16 11:17:11 INFO  SixTest:75 - REST ASSURED SEND TEST REQUEST TO CONTROLLER AND GET RESPONSE CODE: 500
+Ð°2021-02-16 11:17:11 INFO  SixTest:76 - BODY: {"timestamp":"2021-02-16T08:17:11.291+0000","status":500,"error":"Internal Server Error","message":"Illegal character in path at index 27: http://localhost:1080/test/{one}","path":"/users/expect"}
 Ð°
